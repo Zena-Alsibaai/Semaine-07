@@ -20,19 +20,14 @@ body{
 	background:url(../images/bg.jpg) no-repeat center fixed,  #050801;
 	background-size: cover;
 }
-.main-container{
-	background-color: #222;
-	margin: 7rem auto;
-	width: 90%;
-	/*box-shadow: 0 1rem 2rem #7d7d7d;*/
-}
+
 section{
 	padding: 6rem 0;
 }
 h1{
-	font-size:4rem;
+	font-size:3rem;
 	font-family: "Poppins";
-	letter-spacing: .1em;
+	letter-spacing: .5rem;
 	padding: 3rem;
 }
 li{
@@ -44,8 +39,8 @@ a{
 
 }
 p{
-	font-size: 1.8rem;
-	font-weight: 100;
+	font-size: 1.6rem;
+	font-weight: 300;
 
 }
 img{
@@ -126,6 +121,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 
 }
 .logo{
@@ -189,24 +185,26 @@ header{
 		start home text
 =================================*/
 .landing-text{
+	
+	
 	width:100% ;
 	height: 60vh;
 	text-align: center;
 	margin: 10rem auto;
 	margin-top: 10rem;
-	/* z-index: 1; */
+	z-index: 1;
 	padding:2rem;
 }
 
 .landing-text .name{
 font-size: 2rem;
 color: #D82C2E;
-letter-spacing: .1em;
+letter-spacing: .3rem;
 }
 .sub-title{
 	font-size: 2rem;
-	letter-spacing: .1em;
-	color: rgba(255, 255, 255, .3);
+	letter-spacing: .3rem;
+	color:rgba(255, 255, 255, 0.6);
 }
 .btn-box{
 	margin-top: 8rem;
@@ -266,7 +264,7 @@ button{
 }
 
 .about-heading p{
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 300;
 }
 .profile-img{
@@ -274,14 +272,15 @@ button{
 	margin-right: 5rem;
 
 }
-.profile-img img{
-	width: 70%;
+/*.profile-img img{
+	width: 75%;
 }
+*/
 .about-details{
 	flex: 1;
 }
 .social-media{
-	margin-top: 6rem;
+	margin-top: 5rem;
 
 
 }
@@ -291,11 +290,11 @@ button{
 }
 .social-media i{
 	color: #D82C2E;
-	font-size: 4rem;
+	font-size: 5rem;
 	transition: color 650ms;
 	position: relative;
     display: inline-block;
-	padding: 25px 70px;
+	padding: 25px 40px;
 
 }
 .social-media i:hover{
@@ -344,7 +343,7 @@ button{
 	color: #050801;
 	font-size: 5rem;
 	margin: auto;
-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 /*===============================
@@ -369,13 +368,13 @@ transform: rotate(-45deg);
 }
 .portfolio-img{
 	width: 50rem;
-	/*flex: 1;*/
+	flex: 1;
 }
 .portfolio-description{
-	flex: 2;
+	flex: 1;
 }
 .portfolio-description h2{
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 300;
 	margin: 1rem 0;
 
@@ -384,7 +383,7 @@ transform: rotate(-45deg);
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	font-weight: 300;
-	opacity: 0.3;
+	opacity: 0.5;
 }
 
 .portfolio-description a{
@@ -394,6 +393,7 @@ transform: rotate(-45deg);
 	margin-top: 3.5rem;
 	/*margin: 40px 0;*/
 	font-size: 1.5rem;
+	font-weight: 700;
     color: #D82C2E;
     text-decoration: none;
     text-transform: uppercase;
@@ -708,7 +708,7 @@ textarea{
 }
 .input-box input:focus ~ span,
 .input-box textarea:focus ~ span{
-	transform: translateY(-20px);
+	transform: translateY(-30px);
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing:1px ;
@@ -784,120 +784,119 @@ footer{
 /*===============================
 	start Media queries
 =================================*/
-@media screen and (max-width: 1080px){
-	/* .main-container{
 
-		margin: 7rem auto;
-		width: 90%;
-
-	} */
-	.landing-text h1{
-		font-size:3rem;
+@media screen and (maw-width: 768px)
+{
+	body{
+		background:url(../images/bg.jpg) no-repeat center fixed,  #050801;
+		background-size: cover;
 	}
-	.landing-text .name, .subtitle{
+	.landing-text h1 {
+		font-size: 2rem;
+	}
+	.landing-text .name{
 		font-size: 1.5rem;
 	}
+	.landing-text .sub-title{
+		font-size: 1.5rem;
+	}
+	
+	.nav-list{
+		flex-direction: column;
+	}
+	li{
+		margin: 2rem 0;
+	}
+	.nav-link{
+		font-size: 3rem;
+	}
+	.about-heading{
+		font-size: 2rem;
+	}
+	.section-heading h2{
+		font-size: 1.5rem;
+	}
+	.about-details .nav-list{
+		flex-direction: initial;
+	}
+	.about-details li{
+		margin: 0 1rem;
+	}
+	.icon-container{
+		width: 5rem;
+		height: 5rem;
 
-/*navigation*/
-.navigation ul li{
-	padding: 0.5rem 1rem;
-	margin:0.3rem;
-}
-.container {
-    width: 70%;
-    /* max-width: 90rem; */
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-.about-heading h2{
-	font-size: 2.5rem;
-}
-/* .about .container{
-	display:flex
-} */
-
-.about-details p{
-	font-size: 1.5;
-	width: 50%;
-
-}
-
-
-
-.social-media .nav-list{
-	flex-direction: initial;
-
-}
-.about-details li{
-	margin: 0 2rem;
-}
-.icon-container{
-	width: 7rem;
-	height: 7rem;
-
-}
-.icon-container i{
-	font-size: 4rem;
-}
-.section-heading h2{
-	font-size: 3rem;
-}
-.timeline ul{
-	margin: 0 0 0 auto;
-}
-.timeline.date::before{
-	left: -20rem;
-}
-.timeline.date::after{
-	left: -5.9rem;
+	}
+	.icon-container i {
+		font-size: 4rem;
+	}
+	.timeline ul{
+		margin: 0 0 0 auto;
+	}
+	.timeline .date::before{
+		left: -20rem;
+	}
+	.timeline .date::after{
+		left: -5.9rem;
+	}
 }
 
-}
-@media screen and(max-width: 600px){
-	.menu-toggler{
+
+@media screen and (max-width: 600px){
+	.menu-toggelr{
 		top: 2rem;
 		right: 2rem;
 	}
-	.landing-text{
-		font-size: 8rem;
+	.landing-text h1{
+		font-size: 1.5rem;
 	}
-	.landing-text h3{
-		font-size: 1.4rem;
+	.landing-text .name{
+		font-size: 1rem;
+
 	}
-	.navigation li{
-		font-size: 3.5rem;
+	.landing-text .sub-title{
+		font-size: 1rem;
+	}
+	.nav-link{
+		font-size: 2rem;
 	}
 	.about .container{
 		flex-direction: column;
+		
 	}
 	.profile-img{
-		margin:  0 0 7rem 0;
+		margin: 0 0 7rem 0;
 	}
 	.portfolio-item{
 		flex-direction: column;
 	}
 	.portfolio-img{
-		margin:  0 0 2rem 0;
+		margin: 0 0 2rem 0;
 		order: 1;
 	}
 	.portfolio-description{
 		margin: 0;
 		order: 2;
+	}
+	.timeline p{
+		font-size: 1rem;
+	}
+	.timeline .date::before{
+		font-size: 1rem;
+	}
+	form{
+		width: 100%;
+	}
+	.up{
+		right: 2rem;
+	}
+
 }
-.timeline p {
-	font-size: 1.6rem;
-}
-.timeline .date::before{
-	font-size: 1.4rem;
-}
-.form{
-	width: 100%;
-}
-.up{
-	right: 2rem;
-}
-}
+
+
+
+
+
 
 
 
