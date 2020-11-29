@@ -25,7 +25,7 @@ section{
 	padding: 6rem 0;
 }
 h1{
-	font-size:3rem;
+	font-size:4rem;
 	font-family: "Poppins";
 	letter-spacing: .5rem;
 	padding: 3rem;
@@ -39,7 +39,7 @@ a{
 
 }
 p{
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 
 }
@@ -264,18 +264,19 @@ button{
 }
 
 .about-heading p{
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	font-weight: 300;
+	line-height: .5rem;
 }
 .profile-img{
 	flex: 1;
 	margin-right: 5rem;
 
 }
-/*.profile-img img{
-	width: 75%;
+.profile-img img{
+	width: 85%;
 }
-*/
+
 .about-details{
 	flex: 1;
 }
