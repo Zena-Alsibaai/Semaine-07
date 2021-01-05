@@ -19,6 +19,7 @@ body{
 	height: 100%;
 	background: #434343;
 	background-size: cover;
+	overflow-x: hidden;
 }
 
 section{
@@ -350,9 +351,6 @@ button{
 /*===============================
 	end services section
 =================================*/
-
-
-
 
 /*===============================
 	start portfolio section
@@ -789,17 +787,17 @@ footer{
 @media screen and (maw-width: 768px)
 {
 	body{
-		background:url(../images/bg.jpg) no-repeat center fixed,  #050801;
-		background-size: cover;
+		box-sizing: border-box;
 	}
+	
 	.landing-text h1 {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	.landing-text .name{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.landing-text .sub-title{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	
 	.nav-list{
@@ -844,19 +842,22 @@ footer{
 
 
 @media screen and (max-width: 600px){
+	body{
+		box-sizing: border-box;
+	}
 	.menu-toggelr{
 		top: 2rem;
 		right: 2rem;
 	}
 	.landing-text h1{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.landing-text .name{
-		font-size: 1rem;
+		font-size: 1.5rem;
 
 	}
 	.landing-text .sub-title{
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 	.nav-link{
 		font-size: 2rem;
@@ -866,7 +867,7 @@ footer{
 		
 	}
 	.profile-img{
-		margin: 0 0 7rem 0;
+		margin: 0 0 5rem 3rem;
 	}
 	.portfolio-item{
 		flex-direction: column;
@@ -879,11 +880,12 @@ footer{
 		margin: 0;
 		order: 2;
 	}
+	
 	.timeline p{
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 	.timeline .date::before{
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 	form{
 		width: 100%;
@@ -891,6 +893,20 @@ footer{
 	.up{
 		right: 2rem;
 	}
+	.contact-container{
+		flex-direction: column;
+		width: 100%;
+	
+	
+	}
+	.contact-container .contactinfo{
+	order: 1;
+	
+	}
+	.contact-form{
+		order:2;
+	}
+	
 
 }
 
